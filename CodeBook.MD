@@ -35,43 +35,58 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 #### 1. Merges the training and the test sets to create one data set.
 - Download, unzip and read files into R.
+  
+  'train/X_train.txt': Training set.
+
+  'train/y_train.txt': Training labels.
+
+  'test/X_test.txt': Test set.
+
+  'test/y_test.txt': Test labels.
+  
+  'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+  'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
 - Merge training and test sets into one data set.
 
 #### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-- Identify variables with measurements on mean and standard deviation. 
-  
-  tBodyAcc-mean()-X
-  
-  tBodyAcc-mean()-Y
+- Read file into R.
 
-  tBodyAcc-mean()-Z
+  'features.txt': List of all features.
 
-  tBodyAcc-std()-X
+- Identify features with measurements on mean and standard deviation. (mean(): Mean value, std(): Standard deviation)
   
-  tBodyAcc-std()-Y
-  
-  tBodyAcc-std()-Z
-
-  tGravityAcc-mean()-X
-  
-  tGravityAcc-mean()-Y
-  
-  tGravityAcc-mean()-Z
-  
-  tGravityAcc-std()-X
-
-  tGravityAcc-std()-Y
-
-  tGravityAcc-std()-Z  
-
 - Extract selected rows and create new table.
 
 #### 3. Uses descriptive activity names to name the activities in the data set
-- Replace activity variable (integer, 1:6) with a factor with activity labels.  
+- Read file into R.
+
+  'activity_labels.txt': Links the class labels with their activity name.
+
+- Replace activity variable (integer, 1:6) with a factor with activity name.  
 
 #### 4. Appropriately labels the data set with descriptive variable names.
-- Replace variable names description
+- Replace variable names description.
+  
+  Replace 't' with 'Time'
+  
+  Replace 'f' with 'Frequency'
+  
+  Replace 'Acc' with 'Accelerometer'
+  
+  Replace 'Gyro' with 'Gyroscope'
+  
+  Replace 'Mag' with 'Magnitude'
+  
+  Replace 'BodyBody' with 'Body'
 
-
+- Tidy data set created with 10299 rows and 563 columns.
 #### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Group tidy data set created in step 4 by subject and activity.
 
+- Summarize each variable with the average of each subject and activity.
+
+- Final tidy data set created with 180 rows and 68 columns.
+
+- Write final tidy data set into .txt file.
