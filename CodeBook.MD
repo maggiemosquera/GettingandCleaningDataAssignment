@@ -1,5 +1,4 @@
 # Getting and Cleaning Data Course Project CodeBook
-Author: Magdalena M Mosquera
 
 This CodeBook describes the variables, data, and transformations performed to clean up the data.
 
@@ -30,17 +29,48 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 ### *Data cleanup*
+*R Version 4.0.2 (2020-06-22)*
+
+*dplyr package Version 1.0.0*
 
 #### 1. Merges the training and the test sets to create one data set.
-
+- Download, unzip and read files into R.
+- Merge training and test sets into one data set.
 
 #### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+- Identify variables with measurements on mean and standard deviation. 
+  
+  tBodyAcc-mean()-X
+  
+  tBodyAcc-mean()-Y
 
+  tBodyAcc-mean()-Z
+
+  tBodyAcc-std()-X
+  
+  tBodyAcc-std()-Y
+  
+  tBodyAcc-std()-Z
+
+  tGravityAcc-mean()-X
+  
+  tGravityAcc-mean()-Y
+  
+  tGravityAcc-mean()-Z
+  
+  tGravityAcc-std()-X
+
+  tGravityAcc-std()-Y
+
+  tGravityAcc-std()-Z  
+
+- Extract selected rows and create new table.
 
 #### 3. Uses descriptive activity names to name the activities in the data set
-
+- Replace activity variable (integer, 1:6) with a factor with activity labels.  
 
 #### 4. Appropriately labels the data set with descriptive variable names.
+- Replace variable names description
 
 
 #### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
