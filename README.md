@@ -3,13 +3,19 @@ This repository was created for the **Peer-graded Assignment: Getting and Cleani
 
 # About the files on this repository
 The list of files included are:
+
 **README.md**: Explains purpose and contents in the repository.
+
 **CodeBook.md**: Describes variables, data, and transformations performed in order to clean up the data.
+
 **run_analysis.R**: R Script created to prepare tidy data set.
+
 **Merged_Dataset.txt**: Data set created for initial steps (1-4).
+
 **Tidy_Dataset.txt**: Final tidy data set.
 
 
+--
 
 # Getting and Cleaning Data Course Project
 
