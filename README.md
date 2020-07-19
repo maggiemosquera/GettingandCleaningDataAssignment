@@ -1,7 +1,7 @@
 # About this repository
 This repository was created for the **Peer-graded Assignment: Getting and Cleaning Data Course Project** of the Getting and Cleaning Data course by John Hopkins University on Coursera.
 
-# About the files on this repository
+# About the files in this repository
 The list of files included are:
 
 **README.md**: Explains purpose and contents in the repository.
