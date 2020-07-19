@@ -12,7 +12,7 @@ The list of files included are:
 
 **Merged_Dataset.txt**: Data set created for initial steps (1-4).
 
-**Tidy_Dataset.txt**: Final tidy data set.
+**Tidy_Dataset.txt**: Final tidy data set (step 5).
 
 
 --
